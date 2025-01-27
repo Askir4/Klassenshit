@@ -1,6 +1,7 @@
 
 import tkinter as tk
 from tkinter import font
+import webbrowser
 #Hier wird das Fenster definiert
 root = tk.Tk()
 root.geometry("500x500")
@@ -19,6 +20,9 @@ def show_result():
     result= eval(eingabe.get())
     eingabe.delete(0, tk.END)
     eingabe.insert(0, str(result))
+
+def git_link():
+  webbrowser.open("https://github.com/Askir4/Klassenshit") 
 
 
 #Hier wird das Eingabefenster erstellt
@@ -44,8 +48,8 @@ button_geteilt = tk.Button(root, text="/", font=font_cool, command=lambda: addCh
 button_mal = tk.Button(root, text="*", font=font_cool, command=lambda: addChar('*'), bg="grey")
 button_ist_gleich = tk.Button(root, text="=", font=font_cool, command=show_result, bg="grey")
 button_kommastelle = tk.Button(root, text=".", font=font_cool, command=lambda: addChar("."), bg="grey" )
-
 button_clear = tk.Button(root, text="Nuke Them", font=font_cool, command=clear_entry, bg="grey")
+butto_repo = tk.Button(root, text="Repo", font=font_cool, command=git_link, bg="grey")
 
 #Hier werden die Buttons in das oben erstellte Fenster "eingebaut"
 button7.grid(row=1, column=0, sticky="nswe")
@@ -65,6 +69,7 @@ button0.grid(row=4, column=1, sticky="nswe")
 button_geteilt.grid(row=4, column=2, sticky="nswe")
 button_ist_gleich.grid(row=4, column=3, sticky="nswe")
 button_kommastelle.grid(row=5, column=2, sticky="nswe")
+butto_repo.grid(row=5, column=0, sticky="nswe")
 
 for column in range (4):
   root.columnconfigure(column,weight=1)
