@@ -40,7 +40,7 @@ button7=  tk.Button(root, text="7", font=font_cool, command=lambda: addChar('7')
 button8=  tk.Button(root, text="8", font=font_cool, command=lambda: addChar('8'), bg="grey")
 
 button9=  tk.Button(root, text="9", font=font_cool, command=lambda: addChar('9'), bg="grey")
-button0=  tk.Button(root, text="1", font=font_cool, command=lambda: addChar('0'), bg="grey")
+button0=  tk.Button(root, text="0", font=font_cool, command=lambda: addChar('0'), bg="grey")
 
 button_plus = tk.Button(root, text="+", font=font_cool, command=lambda: addChar('+'), bg="grey")
 button_minus = tk.Button(root, text="-", font=font_cool, command=lambda: addChar('-'), bg="grey")
