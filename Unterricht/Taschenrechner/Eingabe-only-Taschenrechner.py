@@ -1,7 +1,7 @@
 
 import tkinter as tk
 from tkinter import font
-
+import webbrowser
 
 #Hier wird das Fenster definiert
 root = tk.Tk()
@@ -21,9 +21,13 @@ def show_result():
     eingabe.delete(0, tk.END)
     eingabe.insert(0, str(result))
 
+def repo_link():
+  webbrowser.open("https://github.com/Askir4/Klassenshit")
+
 #Hie werden die nötigen Buttons definiert
 button_clear = tk.Button(root, text="clear",bg="grey", font=font_cool, command=delete)
 button_ist_gleich = tk.Button(root, text="solve",bg="grey", font=font_cool, command=show_result)
+button_gitlink = tk.Button(root, text="Repo",bg="grey", font=font_cool, command=repo_link)
 
 #Hier wird das Eingabefenster definiert
 eingabe = tk.Entry(root, font=font_cool, borderwidth=22, bg="grey")
@@ -31,6 +35,8 @@ eingabe.grid(row=0, column=0, columnspan=15)
 
 button_clear.grid(row=1, column=0, sticky="nswe")
 button_ist_gleich.grid(row=1, column=3, sticky="nswe")
+button_gitlink.grid(row=1, column=2, sticky="nswe")
+
 
 #Damit es beim ändern der Fenstergröße nicht wie ein Paul (insider Discord) reagiert
 for column in range (4):
