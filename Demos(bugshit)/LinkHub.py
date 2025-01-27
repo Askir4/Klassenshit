@@ -7,7 +7,7 @@ root = tk.Tk()
 root.geometry("450x450")
 root.configure(background='black')
 
-font_cool = font.Font(size=20, family="Terminal")"
+font_cool = font.Font(size=20, family="Terminal")
 
 
 def git_link():
