@@ -45,13 +45,13 @@ button_Hutm = tk.Button(root, text="Hutm", font=font_cool, command=utm_link, bg=
 button_unifi = tk.Button(root, text="Unifi", font=font_cool, command=unifi_link, bg="grey")
 button_youtube = tk.Button(root, text="Youtube", font=font_cool, command=youtube_link, bg="grey")
 
-
-button_repo.grid(row=1, column=0, sticky="nswe")
+button_Hutm.grid(row=0, column=0, sticky="nswe")
 button_Iutm.grid(row=0, column=1, sticky="nswe")
 button_Processes.grid(row=0, column=2, sticky="nswe")
+
 button_unifi.grid(row=1, column=0, sticky="nswe")
-button_Hutm.grid(row=0, column=0, sticky="nswe")
-button_youtube.grid(row=1, column=0, sticky="nswe")
+button_youtube.grid(row=1, column=1, sticky="nswe")
+button_repo.grid(row=1, column=2, sticky="nswe")
 
 
 
