@@ -4,7 +4,7 @@ from tkinter import font
 import webbrowser
 #Hier wird das Fenster definiert
 root = tk.Tk()
-root.geometry("450x450)
+root.geometry("450x450")
 root.configure(background='black')
 
 font_cool = font.Font(size=20, family="Terminal")"
