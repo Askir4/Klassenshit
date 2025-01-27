@@ -56,11 +56,11 @@ button_repo.grid(row=1, column=2, sticky="nswe")
 
 
 
-for column in range (4):
+for column in range (3):
   root.columnconfigure(column,weight=1)
 
 
-for row in range (4):
+for row in range (2):
   root.rowconfigure(row,weight=1 )
 
 
