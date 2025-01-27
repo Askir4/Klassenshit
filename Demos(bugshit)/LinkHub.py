@@ -75,18 +75,18 @@ for row in range (3):
   root.rowconfigure(row,weight=1 )
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 root.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
